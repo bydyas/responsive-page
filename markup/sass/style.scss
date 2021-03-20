@@ -1,0 +1,184 @@
+//==Fonts==
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+//==Add some files==
+@import "reset";
+//==Variable==
+$def-font: 'Montserrat', sans-serif;
+//==StyleSheet==
+body {
+	font-family: $def-font;
+}
+
+.header {
+	padding: 80px;
+}
+
+.logo {
+    margin: 0 auto 80px;
+	width: 100px;
+	height: 60px;
+	display: block;
+}
+
+.logo svg {
+	width: 100px;
+	height: 60px;
+}
+
+.hamburger-menu {
+    padding: 0;
+	width: 48px;
+	height: 31px;
+	position: absolute;
+	top: 56px;
+	left: 48px;
+	border: 0;
+	background: none;
+}
+.hamburger-menu span {
+    width: 100%;
+    height: 6px;
+    background: #000;
+}
+
+.hamburger-menu,
+.header .contact-form {
+	display: none;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+}
+
+.nav-item {
+    margin: 0 40px;
+    color: #000000;
+    font-size: 20px;
+}
+
+.section {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.about-content {
+    margin: 80px 0;
+    text-align: center;
+    font-size: 28px;
+}
+
+.title {
+    padding: 16px 0;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+  }
+
+.history-content {
+    display: flex;
+    margin: 60px 0;
+	justify-content: space-between;
+}
+
+.history-content .box {
+    flex: 0 0 500px;
+    height: 394px;
+	padding: 50px;
+    color: #ffffff;
+    font-size: 18px;
+	background-color: #000000;
+	display: flex;
+	align-items: center;
+}
+
+.custom-date {
+    font-size: 48px;
+}
+.contact-form {
+    padding: 47px 0 0 0;
+
+    &:last-child {
+        margin: 0 0 100px 0;
+    }
+}
+.textarea-container {
+    height: 120px;
+    border: 1px solid #000000;
+
+    & textarea {
+        resize: none;
+        padding: 49px 30px;
+        width: 794px;
+        height: 115px;
+        border: none;
+        outline: none;
+        overflow: hidden;
+
+        &::placeholder {
+            font: 18px/1 $def-font;
+            opacity: 0.5;
+        }
+    }
+
+    & .btn-send {
+        position: relative;
+        top: -46px;
+        left: -5px;
+        padding: 13px 59px;
+        width: 200px;
+        height: 60px;
+        color: #ffffff;
+        font: 28px/1 $def-font;
+        border-radius: 8px;
+        border: none;
+        background: #000;
+    }
+}
+
+
+
+/* tablet */
+@media only screen
+and (min-width: 1024px)
+and (max-width: 1280px) {
+	.logo {
+		width: 80px;
+		height: 48px;
+		margin: 0 auto 80px;
+		display: block;
+    }
+	.logo svg {
+		width: 80px;
+		height: 48px;
+	}
+
+	.wrapper.menu-open {
+        padding: 316px 0 0;
+    }
+
+	.wrapper.menu-open .header {
+        background: #000000;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+	.wrapper.menu-open .header .logo svg * {
+        fill: #fff;
+    }
+
+	.wrapper.menu-open .header .nav-item {
+        color: #fff;
+    }
+}
+/* mobile */
+@media only screen
+and (min-width: 0)
+and (max-width: 1023px) {
+	.logo {
+	    display: none;
+    }
+}
