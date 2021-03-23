@@ -143,12 +143,18 @@ body {
     width: 100%;
 }
 
-.slider div {
-    text-align: center;
-}
+.slider {
 
-.slider img {
-    margin: 0 auto;
+    & div {
+        text-align: center;
+        outline: none;
+    }
+    & img {
+        margin: 0 auto;
+    }
+    & table {
+        border: none;
+    }
 }
 
 .slick-dots {
