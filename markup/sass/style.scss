@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 //==Add some files==
 @import "reset";
+@import "slick";
 //==Variable==
 $def-font: 'Montserrat', sans-serif;
 //==StyleSheet==
@@ -138,7 +139,29 @@ body {
     }
 }
 
+/* .slider-section {
+    
+} */
 
+.slick-dots {
+    display: flex;
+    justify-content: center;
+
+    & button {
+        font-size: 0;
+        margin: 0 5px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #000000;
+        background: #ffffff;
+        outline: none;
+    }
+
+    & .slick-active button {
+        background: #000;
+    }
+}
 
 /* tablet */
 @media only screen
